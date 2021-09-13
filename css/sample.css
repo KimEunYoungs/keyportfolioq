@@ -7,7 +7,9 @@ html{
 }
 body{
   font-family: 'Nanum Gothic', sans-serif;
-  line-height: 1.35;
+}
+ul, ol, li{
+  list-style: none;
 }
 
 /* css 수정 */
@@ -26,61 +28,88 @@ body{
 .navbar-marketing .navbar-nav .nav-item .nav-link:hover{
   color:#2f71ba !important;
 }
-.nav-item.active{
+.navbar-marketing .navbar-nav .nav-item.active a.nav-link{
   color:#2f71ba !important;
 }
 /*헤더로고이미지화*/
 .navbar-marketing .navbar-brand{
   display: block;
   width:170px; height:25px;
-  background: url(../img/header_logo.gif);
+  background: url(../img/header_logo.gif) no-repeat center/100%;
   color:transparent !important;
   font-size: 0;
 }
 .navbar-marketing .navbar-brand:hover{
   color:transparent !important;
-  background-color: rgba(0,0,0,0.3);
+  /* background-color: rgba(0,0,0,0.3); */
+  box-shadow: 5px 5px 5px #333;
+}
+header.overlay:before{
+  opacity: 0.65;
 }
 
 /* ---상단 비주얼 이미지  */
 .page-header{
   background-image: url(../img/visual_window.jpg);
-  background-size: auto 100%;
+  background-size: auto 103%;
   padding-bottom: 0px;}
-.page-header-content{padding: 180px 0 50px !important;} /* 사이즈 em이면 확인해서 배수처리하기 */
+.page-header-title{
+  font-weight:800;
+  /* border:1px solid red; */
+  transform: translateY(-45px);
+  line-height: 1.5;
+}
+.page-header-content{padding: 300px 0 50px !important;} /* 사이즈 em이면 확인해서 배수처리하기 */
 
 /* 스크롤버튼 만들기 */
 .scrolldown{
- border:1px solid white;
- margin-top:100px;
+ /* border:1px solid white; */
+ margin-top:150px;
+}
+.scrolldown p{
+  color:#f8ec8b;
+  font-weight: 800;
 }
 .scrolldown > div{
   width:50px; height:90px; 
-  background-color: red;
+  /* background-color: red; */
   margin:10px auto;
   border:3px solid #f8ec8b;
   border-radius:22px;
   position: relative;
  }
 .scrolldown > div > .sc_one{
-  width:20px; height:20px;
+  width:10px; height:20px;
   background-color: #f8ec8b;
   opacity: 1;
-  border-radius: 50%;
+  border-radius: 5px;
   position: absolute;
-  top:5px; left:50%;
-  transform: translateX(-10px);
-  transition: all 1s;
+  top:0px; left:17px;
+  transform: translateX(10px);
+  animation: Mouse_act 2s ease-out infinite
 }
-.scrolldown:hover > div > .sc_one{
-  opacity: 0.5;
-  top:50px;
+@keyframes Mouse_act
+{
+0%{transform:translateY(2px); opacity: 1;}
+50%{transform:translateY(20px);opacity: 0.8;}
+100%{transform:translateY(40px);opacity: 0.5;}
 }
 
 
+section h2{
+  font-size:22px;
+  font-weight:800 ;
+  padding-bottom: 20px;
+}
+
+.skillLine{margin-bottom: 130px !important;}
+.skillz1{
+  margin-top:20px;
+  /* border:1px solid red; */
+}
 
 /* typing ani */
-.txt-rotate{color:skyblue;}
+.txt-rotate{color:#f8ec8b;}
 
 /*chart ani*/
 .chart {
@@ -108,17 +137,78 @@ body{
   font-size: .8em;
 }
 
-.video{background: url(../img/tripimg.png) no-repeat center/120%;}
+/* 중간 배경 블루 */
+.bg-blue{
+  background-color: #2f71ba !important;
+}
+.bg-blue h2{color:#fff}
+.bg-blue p{color:#fff}
+.text-light, .page-header-dark .btn-link {
+  color: #2f71ba !important;
+}
+
+p.lead{
+  font-size:16px;
+}
+/* 키오픈 이미지 */
+.keyopen{
+  width:600px;
+  height:200px;
+  margin:0 auto;
+  /* border:1px solid red; */
+  background: url(../img/keyopen.png)no-repeat center/100%;
+}
+
+.video{background: url(../img/box_img.png) no-repeat center/auto 110%;}
 
 .my-profile{
-  background-image: url(../img/myface.jpg);
+  background-image: url(../img/flowerbook_bg.png);
 }
-.my-profile .txt-box h4{
-  font-size:32px; color:#fff; margin-bottom:15px; 
+.my-profile .txt-box{
+  /* border:1px solid red */
+}
+.my-profile .txt-box ul{
+  /* border:1px solid wheat; */
+  padding:0;
+  padding-right:80px;
+}
+.my-profile .txt-box ul::after{
+  clear: both;
+  display:block;
+  content: '';
+}
+.my-profile .txt-box li{
+  width:calc((100% -80px) / 3);
+  height:200px;
+  float: left;
+}
+.my-profile .txt-box .t1{
+  /* background-color:red ; */
+  background-image: url(../img/me.jpg);
+  background-repeat: no-repeat;
+  background-size: 260px 196px;
+}
+.my-profile .txt-box .t2{
+  /* background-color:blue ; */
+  text-align: right;
+  padding-right:20px;
+  padding-top:40px;
+}
+.my-profile .txt-box .t3{
+  /* background-color:greenyellow ; */
+  text-align: left;
+  padding-top:40px;
 }
 .my-profile .txt-box p{
-  font-size:22px; 
+  margin-top:60px;
+  margin-left:40px;
 }
+
+.pwebsite h3{
+  font-weight: bold;
+  font-size:16px;
+}
+
 .img-wrap{margin-top:15px;}
 .img-wrap img{width:100%;}
 
