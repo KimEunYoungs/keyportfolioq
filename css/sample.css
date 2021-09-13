@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+html{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.35;
+}
+
+/* css 수정 */
+
+/* ---navbar 수정 */
+.navbar.navbar-dark{
+  background-color:#f8ec8b !important;
+} /* 페이지 상단일떄*/
+.navbar-marketing.navbar-dark.navbar-scrolled{
+  background-color: #e8dc7f !important;
+} /* 스크롤을 내렸을때 */
+.navbar-marketing .navbar-nav .nav-item .nav-link{
+  color:#a69b5f !important;
+  font-weight: 800;
+}
+.navbar-marketing .navbar-nav .nav-item .nav-link:hover{
+  color:#2f71ba !important;
+}
+.nav-item.active{
+  color:#2f71ba !important;
+}
+/*헤더로고이미지화*/
+.navbar-marketing .navbar-brand{
+  display: block;
+  width:170px; height:25px;
+  background: url(../img/header_logo.gif);
+  color:transparent !important;
+  font-size: 0;
+}
+.navbar-marketing .navbar-brand:hover{
+  color:transparent !important;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* ---상단 비주얼 이미지  */
+.page-header{
+  background-image: url(../img/visual_window.jpg);
+  background-size: auto 100%;
+  padding-bottom: 0px;}
+.page-header-content{padding: 180px 0 50px !important;} /* 사이즈 em이면 확인해서 배수처리하기 */
+
+/* 스크롤버튼 만들기 */
+.scrolldown{
+ border:1px solid white;
+ margin-top:100px;
+}
+.scrolldown > div{
+  width:50px; height:90px; 
+  background-color: red;
+  margin:10px auto;
+  border:3px solid #f8ec8b;
+  border-radius:22px;
+  position: relative;
+ }
+.scrolldown > div > .sc_one{
+  width:20px; height:20px;
+  background-color: #f8ec8b;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  top:5px; left:50%;
+  transform: translateX(-10px);
+  transition: all 1s;
+}
+.scrolldown:hover > div > .sc_one{
+  opacity: 0.5;
+  top:50px;
+}
+
+
+
+/* typing ani */
+.txt-rotate{color:skyblue;}
+
+/*chart ani*/
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+
+.video{background: url(../img/tripimg.png) no-repeat center/120%;}
+
+.my-profile{
+  background-image: url(../img/myface.jpg);
+}
+.my-profile .txt-box h4{
+  font-size:32px; color:#fff; margin-bottom:15px; 
+}
+.my-profile .txt-box p{
+  font-size:22px; 
+}
+.img-wrap{margin-top:15px;}
+.img-wrap img{width:100%;}
+
+
+.lity-container{
+  max-width:50%;
+}
+.lity-close{
+  position: absolute;
+  top:0px; right:-50px;
+  font-size:50px;
+}
+.lity-close:hover{
+  color:red;
+  font-size:50px;
+}
+
+
+
+
+@media (max-width: 991.98px){
+  /* navbar 모바일 수정 */
+.navbar-marketing.bg-transparent.navbar-dark {
+    background-color:transparent !important;
+}
+.navbar-marketing.navbar-dark.navbar-scrolled{
+  background-color: #f8ec8b  !important;
+}
+
+
+
+};
