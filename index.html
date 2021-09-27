@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="icon" type="image/x-icon" href="img/faviconkey.png" />
-        <link href="css/sample.css" rel="stylesheet" />
+        <link href="css/keyportfolio_style.css" rel="stylesheet" />
 
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
@@ -26,13 +26,12 @@
                             <a class="navbar-brand text-white" href="#">KEY Portfolio Sample</a>
                             
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <!-- <i data-feather="menu"></i> -->
-                                모바일용버튼
+                                <i data-feather="menu"></i>
                             </button>
                             
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto mr-lg-5">
-                                    <li class="nav-item"><a class="nav-link" href="#">Skill</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="#">Skill</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">About ME</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Portfolio_Website</a></li>
@@ -72,7 +71,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0" /></svg>
                         </div>
                     </header>
-                    <section class="bg-white py-10">
+                    <section class="bg-white py-10" id="aa">
                         <div class="container">
                             <div class="text-center mb-5">
                                 <h2>Skill</h2>
@@ -130,25 +129,30 @@
                     </section>
                     <section class="bg-blue py-10">
                         <div class="container">
-                            <div class="text-center mb-5">
+                            <div class="text-center mb-5 aboutmebox">
+                                <div class="video_img">
+                                    <video loop autoplay preload muted>
+                                      <source src="img/box.webm" type="video/webm">
+                                      <source src="img/box.mp4" type="video/mp4">
+                                      Sorry, your browser doesn't support embedded videos.
+                                  </video>
+                                </div>
                                 <h2>About ME</h2>
                                 <p class="lead">저에 대해서 소개합니다.</p>
                                 <div class="keyopen">
                                 </div><!--keyopen-->
-                                <p>예쁜 보물상자의 열쇠처럼 아름다운 것을 풀어내는 디자이너 김은영 입니다. </p>
+                                <p class="lead02">예쁜 보물상자의 열쇠처럼 아름다운 것을 풀어내는 디자이너 김은영 입니다. </p>
                             </div><!--text-center mb-5-->
                             <div class="row justify-content-center z-1">
                                 <div class="col-lg-8" data-aos="fade-up">
                                     <div class="card lift mb-n15">
-                                        <div class="card-body p-2">
-                                            <div class="video overlay bg-img-cover rounded">
-                                                <a class="video-link" href="img/box.mp4" data-lity><i class="fas fa-play"></i></a>
-                                            </div>
+                                        <div class="keypan">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>   
                         </div>
+                       
                     </section>
                     <section class="bg-img-cover overlay overlay-80 py-10 my-profile">
                         <div class="container position-relative">
@@ -201,13 +205,14 @@
                                           <div class="text-center">
                                               <h3>디자인 문구 BE ON:D</h3>
                                               <p>비온뒤의 반응형 웹사이트 입니다</p>
+                                              <p class="p2">메인페이지와 서브페이지를 구현하였습니다</p>
                                           </div>
                                           <div class="img-wrap">
                                               <a href="http://artworkkeys.dothome.co.kr/myFirstProject/" target="_blank"><img src="img/web01byond.png" alt="비온뒤 반응형 웹사이트 이미지"></a>
                                           </div>
                                           <ul class="vc_btn">
                                               <li><a href="http://artworkkeys.dothome.co.kr/myFirstProject/" target="_blank">VIEW</a></li>
-                                              <li><a href="img/web01_concept.png" data-lity>CONCEPT</a></li>
+                                              <li><a href="img/../beondcon.html" target="_blank">CONCEPT</a></li>
                                           </ul>
                                       </div>
                                   </div>
@@ -223,8 +228,8 @@
                                             <a href="https://blog.naver.com/ordermadekeys" target="_blank"><img src="img/web02odaiba.png" alt="힐튼도쿄오다이바 블로그 이미지"></a>
                                         </div>
                                         <ul class="vc_btn">
-                                            <li><a href="#">VIEW</a></li>
-                                            <li><a href="#" data-lity>CONCEPT</a></li>
+                                            <li><a href="https://blog.naver.com/ordermadekeys">VIEW</a></li>
+                                            <li><a href="img/blogodaibaconcept.jpg" data-lity>CONCEPT</a></li>
                                         </ul>
                                       </div>
                                   </div>
@@ -240,8 +245,8 @@
                                             <a href="https://smartstore.naver.com/ordermadekeys" target="_blank"><img src="img/web03mont.png" alt="비온뒤 반응형 웹사이트 이미지"></a>
                                          </div>
                                          <ul class="vc_btn">
-                                            <li><a href="#">VIEW</a></li>
-                                            <li><a href="#" data-lity>CONCEPT</a></li>
+                                            <li><a href="https://smartstore.naver.com/ordermadekeys">VIEW</a></li>
+                                            <li><a href="img/MontBlanc_concept.jpg" data-lity>CONCEPT</a></li>
                                         </ul>
                                       </div>
                                   </div>
@@ -268,8 +273,8 @@
                                             <p class="card-text font-weight-light mb-4">
                                                 산지애 테라스의 로고 / 명함 / 리플렛 디자인입니다.
                                             </p>
-                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>VIEW</a>
-                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>CONCEPT</a>                        
+                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline sanjiaeView" href="img/sanjiaeView.png" data-lity>VIEW</a>
+                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/sanji_concept.jpg" data-lity>CONCEPT</a>                        
                                         </div>
                                     </div>
                                 </div>
@@ -284,8 +289,8 @@
                                             <p class="card-text font-weight-light mb-4">
                                                 유비쿼티 브로셔 디자인입니다.
                                             </p>
-                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>VIEW</a>
-                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>CONCEPT</a>   
+                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/UBIQUITIview.jpg" data-lity>VIEW</a>
+                                            <!-- <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>CONCEPT</a>    -->
                                         </div>
                                     </div>
                                     <div class="col-md-6 order-0 order-md-1"><img class="img-fluid" src="img/pic02ubi.png" alt="..." /></div>
@@ -302,8 +307,8 @@
                                             <p class="card-text font-weight-light mb-4">
                                                 슬리 토퍼 매트리스 사용설명서 디자인 입니다.
                                             </p>
-                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>VIEW</a>
-                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>CONCEPT</a> 
+                                            <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/SLEEview.jpg" data-lity>VIEW</a>
+                                            <!-- <a class="btn btn-outline-dark btn-marketing rounded-pill ainline" href="img/visual_window.jpg" data-lity>CONCEPT</a>  -->
                                         </div>
                                     </div>
                                 </div>
@@ -346,6 +351,7 @@
                 </footer>
             </div>
         </div>
+
         <script src="js/jquery-1.7.0.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
@@ -381,6 +387,10 @@
               })
             //------------------------------- 
              
+            $('.scrolldown').click(function(){
+                var aa = $("main > section#aa").offset().top;
+                $("html,body").stop().animate({scrollTop:aa - 100});
+            });
             
             //--------------------------------
             //반복문 
@@ -389,27 +399,28 @@
                 var location = $(window).scrollTop();    
 
                 content.each(function(){
-            var tg = $(this)    
-            var idx = tg.index()
-            if(tg.offset().top <= location){
-                menu.removeClass("active")
-                menu.eq(idx-1).addClass("active")
-            }else if(location == 0){
-                menu.removeClass("active")
-            }
-            })
+                    var tg = $(this)    
+                    var idx = tg.index()
+                    if(tg.offset().top <= location){
+                        menu.removeClass("active")
+                        menu.eq(idx-1).addClass("active")
+                    }else if(location == 0){
+                        menu.removeClass("active");
+                    $(".navbar-nav > li:first-child").addClass('active');
+                    }
+                })
 
             if($('#chart').hasClass('aos-animate') == true){
-             //이지파이차트  
-             $('.chart').easyPieChart({
-			easing: 'easeOutBounce',
-            barColor:'#000',
-			onStep: function(from, to, percent) {
-				$(this.el).find('.percent').text(Math.round(percent));
-			}
-		    });
+                    //이지파이차트  
+                    $('.chart').easyPieChart({
+                    easing: 'easeOutBounce',
+                    barColor:'#000',
+                    onStep: function(from, to, percent) {
+                        $(this.el).find('.percent').text(Math.round(percent));
+                    }
+                    });
 
-            }
+                }
 
             });
             
@@ -419,62 +430,62 @@
           }) //끝
           </script>
           <script>
-               var TxtRotate = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+            var TxtRotate = function (el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
 
-TxtRotate.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+            TxtRotate.prototype.tick = function () {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
 
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
 
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+                this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-    var that = this;
-    var delta = 300 - Math.random() * 100;
+                var that = this;
+                var delta = 300 - Math.random() * 100;
 
-    if (this.isDeleting) { delta /= 2; }
+                if (this.isDeleting) { delta /= 2; }
 
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                }
 
-    setTimeout(function () {
-        that.tick();
-    }, delta);
-};
+                setTimeout(function () {
+                    that.tick();
+                }, delta);
+            };
 
-window.onload = function () {
-    var elements = document.getElementsByClassName('txt-rotate');
-    for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-    document.body.appendChild(css);
-};
+            window.onload = function () {
+                var elements = document.getElementsByClassName('txt-rotate');
+                for (var i = 0; i < elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-rotate');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+                // INJECT CSS
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                document.body.appendChild(css);
+            };
           </script>
     </body>
 </html>
